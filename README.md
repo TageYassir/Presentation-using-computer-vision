@@ -27,7 +27,7 @@ To ensure smooth functionality, slides must be prepared in a specific format:
 To help with that, we provide a user-friendly interface that:
 - Converts images from JPG to PNG.
 - Renames slides in the correct numeric format.
-- Compresses slides into a ZIP file if needed.
+- Uncompresses slides file if needed.
 
 ---
 
@@ -43,7 +43,7 @@ To help with that, we provide a user-friendly interface that:
 - `numpy`: For numerical operations
 - `tkinter`: For the graphical user interface (GUI) (usually pre-installed with Python)
 - `PIL (Pillow)`: For image processing
-- `zipfile`: For compressing image slides
+- `zipfile`: For uncompressing image slides
 
 ---
 
@@ -83,7 +83,7 @@ To help with that, we provide a user-friendly interface that:
 2. Use the interface buttons to:
    - Convert images
    - Rename them
-   - Compress the slide set
+   - Uncompress the slide set
 3. Run the main presentation script.
 4. Use your hand gestures to control slide progression.
 
