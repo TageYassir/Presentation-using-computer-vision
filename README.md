@@ -51,7 +51,7 @@ To help with that, we provide a user-friendly interface that:
 
 - ✅ Convert JPG to PNG
 - ✅ Rename slides to sequential numbers (e.g., `1.png`, `2.png`, ...)
-- ✅ Zip the slides folder
+- ✅ Unzip the slides folder
 - ✅ Use hand gestures to go forward/backward through slides
 - ✅ Simple and intuitive interface using Tkinter
 
