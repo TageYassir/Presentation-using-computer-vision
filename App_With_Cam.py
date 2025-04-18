@@ -45,7 +45,7 @@ while True:
     imgCurrent = cv2.imread(pathFullImage)
 
     # Find the hand and its landmarks
-    hands, img = detectorHand.findHands(img)  # with draw
+    hands, img = detectorHand.findHands(img)
 
     if hands and buttonPressed is False:  # If hand is detected
 
@@ -56,7 +56,7 @@ while True:
 
         # Constrain values for easier drawing
         xVal = int(np.interp(lmList[8][0], [0, width], [0, width]))
-        yVal = int(np.interp(lmList[8][1], [150, height-150], [0, height]))
+        yVal = int(np.interp(lmList[8][1], [150, height - 150], [0, height]))
         indexFinger = xVal, yVal
 
         if fingers == [1, 1, 1, 1, 1]:  # Only proceed if the first finger is up

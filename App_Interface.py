@@ -45,7 +45,8 @@ class FileManagerApp:
             ("📦 Extract ZIP", self.extract_zip),
             ("🖼️ Convert JPG to PNG", self.convert_images),
             ("✍️ Rename Files", self.rename_images),
-            ("🚀 Start App", self.start_app),
+            ("🚀 Start App Without Cam", self.start_app_without_cam),
+            ("🚀 Start App With Cam", self.start_app_with_cam),
             ("❌ Exit", self.cleanup_and_exit),
         ]
 
@@ -130,19 +131,31 @@ class FileManagerApp:
 
         self.root.quit()
 
-    def start_app(self):
-        """Runs the App.py script and hides the interface. Shows it again when the app is closed."""
+    def start_app_without_cam(self):
+        """Runs the App_Without_Cam.py script and hides the interface. Shows it again when the app is closed."""
         try:
             self.root.withdraw()  # Hide the Tkinter window
             python_executable = sys.executable
-            process = subprocess.Popen([python_executable, "App.py"])
+            process = subprocess.Popen([python_executable, "App_Without_Cam.py"])
+
+            threading.Thread(target=self.monitor_app, args=(process,), daemon=True).start()
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to start app: {e}")
+
+
+    def start_app_with_cam(self):
+        """Runs the App_With_Cam.py script and hides the interface. Shows it again when the app is closed."""
+        try:
+            self.root.withdraw()  # Hide the Tkinter window
+            python_executable = sys.executable
+            process = subprocess.Popen([python_executable, "App_With_Cam.py"])
 
             threading.Thread(target=self.monitor_app, args=(process,), daemon=True).start()
         except Exception as e:
             messagebox.showerror("Error", f"Failed to start app: {e}")
 
     def monitor_app(self, process):
-        """Waits for the App.py process to close, then shows the Tkinter window again."""
+        """Waits for the App_Without_Cam.py process to close, then shows the Tkinter window again."""
         process.wait()
         self.root.after(0, self.root.deiconify)
 
