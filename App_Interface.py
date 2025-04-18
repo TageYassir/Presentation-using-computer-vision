@@ -16,7 +16,7 @@ class FileManagerApp:
         self.root.configure(bg="#2C3E50")  # Dark background
 
         # Set custom window icon (Replace 'icon.ico' with your actual icon file)
-        self.root.iconbitmap(r"C:\Users\fftt7\PycharmProjects\PresentationAppComputerVision\icon\projection-screen.ico")  # Make sure you have an 'icon.ico' file in the same directory
+        self.root.iconbitmap(r"put your path here")  # Make sure you have an 'icon.ico' file in the same directory
 
         # Apply ttk styles
         style = ttk.Style()
