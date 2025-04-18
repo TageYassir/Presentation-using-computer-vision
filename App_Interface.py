@@ -50,6 +50,7 @@ class FileManagerApp:
             ("❌ Exit", self.cleanup_and_exit),
         ]
 
+
         # Create a frame to hold buttons (so they stay centered)
         button_frame = tk.Frame(main_frame, bg="#2C3E50")
         button_frame.pack(pady=10)

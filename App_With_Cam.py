@@ -102,6 +102,7 @@ while True:
     h, w, _ = imgCurrent.shape
     imgCurrent[0:hs, 0:ws] = imgSmall  # Placing the camera feed on the left side
 
+
     cv2.imshow("Slides", imgCurrent)
     """cv2.imshow("Image", img)"""
 
