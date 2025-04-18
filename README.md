@@ -25,9 +25,9 @@ To ensure smooth functionality, slides must be prepared in a specific format:
 2. Filenames should be **numbered sequentially**: `1.png`, `2.png`, `3.png`, etc.
 
 To help with that, we provide a user-friendly interface that:
+- Uncompresses slides file if needed.
 - Converts images from JPG to PNG.
 - Renames slides in the correct numeric format.
-- Uncompresses slides file if needed.
 
 ---
 
@@ -49,9 +49,10 @@ To help with that, we provide a user-friendly interface that:
 
 ## 🧰 Features
 
+- ✅ Unzip the slides folder
 - ✅ Convert JPG to PNG
 - ✅ Rename slides to sequential numbers (e.g., `1.png`, `2.png`, ...)
-- ✅ Unzip the slides folder
+- ✅ Choose to lanch the app with a cam or not.
 - ✅ Use hand gestures to go forward/backward through slides
 - ✅ Simple and intuitive interface using Tkinter
 
@@ -81,11 +82,11 @@ To help with that, we provide a user-friendly interface that:
 
 1. Launch the interface to prepare your slides.
 2. Use the interface buttons to:
+3. - Uncompress the slide set
    - Convert images
    - Rename them
-   - Uncompress the slide set
-3. Run the main presentation script.
-4. Use your hand gestures to control slide progression.
+4. Run the main presentation script.
+5. Use your hand gestures to control slide progression.
 
 ---
 
