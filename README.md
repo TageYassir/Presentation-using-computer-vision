@@ -52,7 +52,7 @@ To help with that, we provide a user-friendly interface that:
 - ✅ Unzip the slides folder
 - ✅ Convert JPG to PNG
 - ✅ Rename slides to sequential numbers (e.g., `1.png`, `2.png`, ...)
-- ✅ Choose to lanch the app with a cam or not.
+- ✅ Choose to launch the app with a cam or not.
 - ✅ Use hand gestures to go forward/backward through slides
 - ✅ Simple and intuitive interface using Tkinter
 
